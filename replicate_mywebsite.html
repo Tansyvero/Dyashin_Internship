@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 1em;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            padding: 1em;
+        }
+
+        .content {
+            flex: 3;
+        }
+
+        .main-heading h2 {
+            margin-top: 0;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto auto;
+            gap: 1em;
+            margin-top: 1em;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card h3 {
+            background-color: #333;
+            color: #fff;
+            margin: -1em -1em 1em -1em;
+            padding: 0.5em;
+            flex-shrink: 0;
+        }
+
+        .card:nth-child(4) {
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+        }
+
+        .card:nth-child(5) {
+            grid-column: 2 / span 1;
+            grid-row: 2 / span 1;
+        }
+
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            flex: 1;
+            margin-left: 2em;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>My Website</h1>
+            <nav>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <section class="main-heading">
+                <h2>This is the main heading</h2>
+                <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+            </section>
+            <section class="cards">
+                <div class="card">
+                    <h3>Card One</h3>
+                    <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado.</p>
+                </div>
+                <div class="card">
+                    <h3>Card Two</h3>
+                    <p>Daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.</p>
+                </div>
+                <div class="card">
+                    <h3>Card Three</h3>
+                    <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
+                </div>
+                <div class="card">
+                    <h3>Card Four</h3>
+                    <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
+                </div>
+                <div class="card">
+                    <h3>Card Five</h3>
+                    <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+                </div>
+            </section>
+        </div>
+        <aside class="sidebar">
+            <p>Have you discovered all of the other excellent content on this website?</p>
+        </aside>
+    </main>
+</body>
+</html>
+
